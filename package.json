@@ -1,0 +1,26 @@
+{
+  "name": "back_repertorio_musical",
+  "version": "1.0.0",
+  "description": "Backend do sistema voltado para gerenciamento de repertório musical",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Felipey",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.1",
+    "require-dir": "^1.2.0",
+    "uuid": "^9.0.0"
+  }
+}
