@@ -28,12 +28,17 @@ const db_name =
     ? process.env.DB_NAME_PROD
     : process.env.DB_NAME_LOCAL
 
+//comment ssl later when the fix is found
+
 const pool = new Pool({
   user: db_user,
   password: db_password,
   host: db_host,
   port: db_port,
   database: db_name,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 })
 
 module.exports = { pool }
